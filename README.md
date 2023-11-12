@@ -2,6 +2,8 @@
 Huawei challenge for the Hackaton Junction - Nov 2023
 
 Some screenshots of the designs and UI/UX:
+
+
 <img width="626" alt="Screenshot 2023-11-12 at 9 56 21" src="https://github.com/nascimento-jgb/junction-2023/assets/97626192/7a8fca5a-86a4-42f7-8fee-176bd346797c">
 
 <img width="626" alt="Screenshot 2023-11-12 at 9 56 33" src="https://github.com/nascimento-jgb/junction-2023/assets/97626192/a7ac5bd9-6d54-443f-a8f2-2f81e02fe921">
