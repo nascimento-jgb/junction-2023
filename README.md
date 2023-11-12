@@ -1,8 +1,6 @@
 # junction-2023
 Huawei challenge for the Hackaton Junction - Nov 2023
 
-[Video presentation about the project](https://www.youtube.com/watch?v=5gqCif5eld0)
-
 Some screenshots of the designs and UI/UX:
 
 
