@@ -8,40 +8,31 @@
 import Foundation
 import SwiftUI
 
-//TODO: Fix the display for whole page lenght ignoring safe area
 struct UserStatsView: View {
+    let newUser: appUser = appUser()
+    
     var body: some View {
-        UserStatsProfileCellView()
+        UserStatsProfileCellView(userInfo: newUser.userInfo)
         
         ZStack {
             ScrollView {
                 LazyVGrid(columns: [GridItem(.fixed(180)), GridItem(.fixed(180))], spacing: 20, content: {
-                    UserStatsSingleListCellView()
-                    UserStatsSingleListCellView()
-                    UserStatsSingleListCellView()
-                    UserStatsSingleListCellView()
-                    UserStatsSingleListCellView()
-                    UserStatsSingleListCellView()
-                    UserStatsSingleListCellView()
-                    UserStatsSingleListCellView()
-                    UserStatsSingleListCellView()
-                    UserStatsSingleListCellView()
-                    UserStatsSingleListCellView()
-                    UserStatsSingleListCellView()
-                    UserStatsSingleListCellView()
-                    UserStatsSingleListCellView()
-                    UserStatsSingleListCellView()
-                    UserStatsSingleListCellView()
-                    UserStatsSingleListCellView()
-                    UserStatsSingleListCellView()
-                    UserStatsSingleListCellView()
-                    UserStatsSingleListCellView()
-                    
+                    UserStatsSingleListCellView(statsType: "Sleep Time", value: 360, unit: "min", imageName: "zzz")
+                    UserStatsSingleListCellView(statsType: "Energy Burned", value: 770, unit: "kcal", imageName: "flame")
+                    UserStatsSingleListCellView(statsType: "Exercise Time", value: 25, unit: "min", imageName: "hare")
+                    UserStatsSingleListCellView(statsType: "Heart Rate", value: 93, unit: "bpm", imageName: "heart")
+                    UserStatsSingleListCellView(statsType: "Stress Score", value: 60, unit: "%", imageName: "gauge")
+                    UserStatsSingleListCellView(statsType: "Step Count", value: 13100, unit: "un", imageName: "arrow.up.arrow.down.circle")
                 })
             }
         }
         .frame(maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
         .ignoresSafeArea()
+        .onAppear(){
+            newUser.fetchData()
+            print("\(newUser.userStats)")
+            print("\(newUser.userInfo)")
+        }
     }
 }
 

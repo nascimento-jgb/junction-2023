@@ -7,6 +7,13 @@
 import SwiftUI
 import Foundation
 
+struct Friend: Identifiable {
+   let id: Int
+   let name: String
+   let level: Int
+   let image: String // This should be a URL or a local file path
+}
+
 enum viewListing: Int, CaseIterable {
     case userStats
     case petStats
@@ -40,4 +47,22 @@ func destinationView(for item: viewListing) -> some View {
         VirtualStoreView()
     }
     
+}
+
+///Structures to parse JSON
+struct DataHistory: Codable {
+    var HealthData: [String : [DataCell]]
+}
+
+struct DataCell: Codable {
+    let type: String
+    let unit: String
+    let value: Double
+}
+
+struct UserInfo {
+    var name: String
+    var level: Int
+    var rank: String
+    var profileImage: String
 }

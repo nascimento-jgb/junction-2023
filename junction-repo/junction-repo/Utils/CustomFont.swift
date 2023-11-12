@@ -9,7 +9,6 @@ import Foundation
 import SwiftUI
 
 enum AppFont {
-    
     static let header       = Font.custom(montserrat.extraBold.weight,  size: 40)
     static let header2      = Font.custom(montserrat.extraBold.weight,  size: 30)
     static let title        = Font.custom(montserrat.bold.weight,       size: 24)

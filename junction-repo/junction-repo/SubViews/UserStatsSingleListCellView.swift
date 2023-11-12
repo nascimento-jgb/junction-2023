@@ -8,10 +8,15 @@
 import SwiftUI
 
 struct UserStatsSingleListCellView: View {
+    let statsType: String
+    let value: Double
+    let unit: String
+    let imageName: String
+    
     var body: some View {
         ZStack{
             VStack(alignment: .leading){
-                Text("Heart Beat")
+                Text(statsType)
                     .font(.headline).bold()
                     .foregroundColor(.white)
                     .padding(.top, 4)
@@ -19,7 +24,7 @@ struct UserStatsSingleListCellView: View {
                     .padding(.bottom)
                 
                 HStack{
-                    Text("100 Bpm")
+                    Text(String(Int(value)) + unit)
                         .font(.subheadline).bold()
                         .foregroundColor(.white)
                         .padding(.horizontal, 16)
@@ -30,21 +35,25 @@ struct UserStatsSingleListCellView: View {
                         )
                         .frame(width:100, height: 24)
                     
-                    Image(systemName: "heart")
+                    Image(systemName: imageName)
                         .resizable()
                         .scaledToFit()
                         .frame(width: 25, height: 25)
                         .padding([.bottom, .trailing, .leading], 4)
+                        .foregroundColor(.white)
                 }
             }
             .padding(11)
-            .background(.gray.opacity(0.4))
+            .background(Color(hex: "704CFF"))
             .cornerRadius(12)
-            .shadow(color: .gray, radius: 6, x:0.0 , y: 0.0)
+            .shadow(color: Color(hex: "704CFF"), radius: 6, x:0.0 , y: 0.0)
         }
     }
 }
 
-#Preview {
-    UserStatsSingleListCellView()
+struct UserStatsSingleListCellView_Previews: PreviewProvider {
+    static var previews: some View {
+        UserStatsSingleListCellView(statsType: "Sleep Time", value: 360, unit: "min", imageName: "heart")
+    }
 }
+

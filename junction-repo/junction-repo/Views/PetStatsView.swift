@@ -11,33 +11,34 @@ struct PetStatsView: View {
     var body: some View {
         ZStack{
             VStack{
-                Image(systemName: "cloud.sun")
+                Image("petImage")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 250, height: 175)
                     .padding([.bottom, .top], 10)
+                    .foregroundColor(.white)
                 
                 VStack{
-                    Text("Pet name")
+                    Text("PET NAME")
                         .font(.headline).bold()
-                        .foregroundColor(.black)
+                        .foregroundColor(.white)
                         .padding(.top, 4)
                         .padding()
                     
-                    Text("Some subtitle")
+                    Text("Rank 1 - Lvl 10")
                         .font(.subheadline).bold()
-                        .foregroundColor(.black)
+                        .foregroundColor(.white)
                         .padding(.horizontal, 16)
                         .padding(.vertical, 8)
                         .overlay(
                             RoundedRectangle(cornerRadius: 20)
-                                .fill(.blue.opacity(0.5))
+                                .fill(Color(hex: "704CFF").opacity(0.5))
                         )
-                        .frame(width:100, height: 24)
+                        .frame(width:140, height: 24)
                     
-                    Text("Description")
+                    Text("Here it comes some descripton of the activities for the day.")
                         .font(.subheadline).bold()
-                        .foregroundColor(.black)
+                        .foregroundColor(.white)
                         .padding(.top, 4)
                         .padding()
                         .multilineTextAlignment(.center)
@@ -47,7 +48,7 @@ struct PetStatsView: View {
                         HStack{
                             Text("Stats1")
                                 .font(.subheadline).bold()
-                                .foregroundColor(.black)
+                                .foregroundColor(.white)
                                 .padding(1)
                                 .multilineTextAlignment(.center)
                             
@@ -59,7 +60,7 @@ struct PetStatsView: View {
                         HStack{
                             Text("Stats2")
                                 .font(.subheadline).bold()
-                                .foregroundColor(.black)
+                                .foregroundColor(.white)
                                 .padding(1)
                                 .multilineTextAlignment(.center)
                             
@@ -69,7 +70,7 @@ struct PetStatsView: View {
                         HStack{
                             Text("Stats3")
                                 .font(.subheadline).bold()
-                                .foregroundColor(.black)
+                                .foregroundColor(.white)
                                 .padding(1)
                                 .multilineTextAlignment(.center)
                             
@@ -79,7 +80,7 @@ struct PetStatsView: View {
                         HStack{
                             Text("Stats4")
                                 .font(.subheadline).bold()
-                                .foregroundColor(.black)
+                                .foregroundColor(.white)
                                 .padding(1)
                                 .multilineTextAlignment(.center)
                             
@@ -90,13 +91,13 @@ struct PetStatsView: View {
                         
                 }.background(
                     RoundedRectangle(cornerRadius: 20)
-                        .fill(Color.white.opacity(0.95)))
+                        .fill(Color(hex: "704CFF").opacity(0.8)))
             }
             
         }
-        .background(.gray.opacity(0.6))
+        .background(Color.white)
         .cornerRadius(12)
-        .shadow(color: .gray.opacity(0.6), radius: 6, x:0.0 , y: 0.0)
+        .shadow(color: Color(hex: "704CFF").opacity(0.6), radius: 6, x:0.0 , y: 0.0)
     }
 }
 

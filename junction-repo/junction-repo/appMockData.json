@@ -1,0 +1,100 @@
+{
+ "HealthData": {
+   "2023-06-11": [
+     {
+       "type": "SleepAnalysis",
+       "unit": "min",
+       "value": 360
+     },
+     {
+       "type": "EnergyBurned",
+       "unit": "kcal",
+       "value": 770.59
+     },
+     {
+       "type": "ExerciseTime",
+       "unit": "min",
+       "value": 25
+     },
+     {
+       "type": "HeartRate",
+       "unit": "count/min",
+       "value": 93.93
+     },
+     {
+       "type": "StepCount",
+       "unit": "count",
+       "value": 13133
+     },
+     {
+       "type": "StressScore",
+       "unit": "percent",
+       "value": 60
+     }
+   ],
+   "2023-06-12": [
+     {
+       "type": "SleepAnalysis",
+       "unit": "min",
+       "value": 390
+     },
+     {
+       "type": "EnergyBurned",
+       "unit": "kcal",
+       "value": 800.25
+     },
+     {
+       "type": "ExerciseTime",
+       "unit": "min",
+       "value": 30
+     },
+     {
+       "type": "HeartRate",
+       "unit": "count/min",
+       "value": 95.5
+     },
+     {
+       "type": "StepCount",
+       "unit": "count",
+       "value": 13500
+     },
+     {
+       "type": "StressScore",
+       "unit": "percent",
+       "value": 55
+     }
+   ],
+   "2023-06-13": [
+     {
+       "type": "SleepAnalysis",
+       "unit": "min",
+       "value": 420
+     },
+     {
+       "type": "EnergyBurned",
+       "unit": "kcal",
+       "value": 750.75
+     },
+     {
+       "type": "ExerciseTime",
+       "unit": "min",
+       "value": 35
+     },
+     {
+       "type": "HeartRate",
+       "unit": "count/min",
+       "value": 90.2
+     },
+     {
+       "type": "StepCount",
+       "unit": "count",
+       "value": 14000
+     },
+     {
+       "type": "StressScore",
+       "unit": "percent",
+       "value": 50
+     }
+   ]
+ }
+}

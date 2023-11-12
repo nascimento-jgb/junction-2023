@@ -8,15 +8,17 @@
 import SwiftUI
 
 struct UserStatsProfileCellView: View {
+    var userInfo: UserInfo
+    
     var body: some View {
         ZStack{
             Circle()
-                .foregroundColor(.black)
+                .foregroundColor(Color(hex: "704CFF"))
                 .frame(width: 160, height: 160)
                 .offset(y: -106)
             
             VStack{
-                Image("incognito")
+                Image(userInfo.profileImage)
                     .resizable()
                     .scaledToFit()
                     .frame(width: 130, height: 130)
@@ -24,17 +26,17 @@ struct UserStatsProfileCellView: View {
                     .overlay(Circle().stroke(Color.white, lineWidth: 2))
                     .padding(.bottom, 4)
                 
-                Text("Complete user name")
+                Text(userInfo.name)
                     .padding()
                     .foregroundColor(.black)
                     .font(AppFont.title)
 
-                Text("N/A")
+                Text(userInfo.rank)
                     .padding(.top, 1)
                     .foregroundColor(.black)
                     .font(AppFont.subtitle)
                 
-                UserStatsXPBarView(xpPercentage: 45)
+                UserStatsXPBarView(xpPercentage: Double(userInfo.level))
                     .padding(.top, -25)
             }
         }
@@ -43,5 +45,5 @@ struct UserStatsProfileCellView: View {
         
 
 #Preview {
-    UserStatsProfileCellView()
+    UserStatsProfileCellView(userInfo: UserInfo(name: "Test User", level: 13, rank: "Rank 7", profileImage: ""))
 }
