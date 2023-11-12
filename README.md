@@ -20,3 +20,4 @@ Presentation report:
 DemoApp video:
 https://github.com/nascimento-jgb/junction-2023/assets/97626192/4a6dcd32-a724-46b0-b6bb-46341af776c5
 
+[Figma demo flow](https://www.figma.com/proto/qLgHxpRBRCz4ElI359wrAx/Untitled?type=design&node-id=23-115&t=gjzbgjQPTCfvSFdm-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=23%3A115&show-proto-sidebar=1&mode=design)
