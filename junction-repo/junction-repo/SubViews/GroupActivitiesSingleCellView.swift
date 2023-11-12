@@ -12,15 +12,15 @@ struct GroupActivitiesSingleCellView: View {
 
    var body: some View {
        HStack {
-           Image(systemName: friend.image)
+           Image(friend.image)
                .resizable()
                .frame(width: 50, height: 50)
                .clipShape(Circle())
            VStack(alignment: .leading) {
                Text(friend.name)
-                  .font(.headline)
+                   .font(Font.custom("Helvetica", size: UIFont.preferredFont(forTextStyle: .headline).pointSize))
                Text("Level \(friend.level)")
-                  .font(.subheadline)
+                   .font(Font.custom("Helvetica", size: UIFont.preferredFont(forTextStyle: .subheadline).pointSize))
            }
            Spacer()
            Button(action: {
@@ -31,6 +31,7 @@ struct GroupActivitiesSingleCellView: View {
                   .background(Color(hex: "704CFF"))
                   .foregroundColor(.white)
                   .cornerRadius(10)
+                  .font(Font.custom("Helvetica", size: UIFont.preferredFont(forTextStyle: .subheadline).pointSize))
            }
        }
        .frame(maxWidth: .infinity)

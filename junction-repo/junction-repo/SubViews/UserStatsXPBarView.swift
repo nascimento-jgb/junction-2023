@@ -13,7 +13,7 @@ struct UserStatsXPBarView: View {
     var body: some View {
         VStack(alignment: .leading) {
             Text("Lvl \(String(format: "%.2f", xpPercentage))")
-                .font(AppFont.subtitle)
+                .font(Font.custom("Helvetica", size: UIFont.preferredFont(forTextStyle: .title3).pointSize))
                 .foregroundColor(.black)
             
             UserStatsProgressBarView(value: 35, maxValue: 100)

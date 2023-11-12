@@ -17,7 +17,7 @@ struct UserStatsSingleListCellView: View {
         ZStack{
             VStack(alignment: .leading){
                 Text(statsType)
-                    .font(.headline).bold()
+                    .font(Font.custom("Helvetica", size: UIFont.preferredFont(forTextStyle: .headline).pointSize).bold())
                     .foregroundColor(.white)
                     .padding(.top, 4)
                     .padding(.leading, 6)
@@ -25,7 +25,7 @@ struct UserStatsSingleListCellView: View {
                 
                 HStack{
                     Text(String(Int(value)) + unit)
-                        .font(.subheadline).bold()
+                        .font(Font.custom("Helvetica", size: UIFont.preferredFont(forTextStyle: .subheadline).pointSize).bold())
                         .foregroundColor(.white)
                         .padding(.horizontal, 16)
                         .padding(.vertical, 8)
@@ -40,7 +40,7 @@ struct UserStatsSingleListCellView: View {
                         .scaledToFit()
                         .frame(width: 25, height: 25)
                         .padding([.bottom, .trailing, .leading], 4)
-                        .foregroundColor(.white)
+                        .foregroundColor(Color(hex: "FF4895"))
                 }
             }
             .padding(11)

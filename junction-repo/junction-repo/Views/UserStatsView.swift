@@ -30,8 +30,6 @@ struct UserStatsView: View {
         .ignoresSafeArea()
         .onAppear(){
             newUser.fetchData()
-            print("\(newUser.userStats)")
-            print("\(newUser.userInfo)")
         }
     }
 }

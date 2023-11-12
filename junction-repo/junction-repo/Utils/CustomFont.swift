@@ -21,7 +21,7 @@ enum AppFont {
     static let footnote     = Font.custom(montserrat.bold.weight,       size: 12)
     static let footnote2    = Font.custom(montserrat.semiBold.weight,   size: 12)
     static let login        = Font.custom(montserrat.regular.weight,    size: 10)
-    
+
     static var custom: (montserrat, CGFloat) -> Font = { (weight, size) in
         return Font.custom(weight.weight, size: size)
     }

@@ -29,12 +29,12 @@ struct UserStatsProfileCellView: View {
                 Text(userInfo.name)
                     .padding()
                     .foregroundColor(.black)
-                    .font(AppFont.title)
+                    .font(Font.custom("Helvetica", size: UIFont.preferredFont(forTextStyle: .title1).pointSize).bold())
 
                 Text(userInfo.rank)
                     .padding(.top, 1)
                     .foregroundColor(.black)
-                    .font(AppFont.subtitle)
+                    .font(Font.custom("Helvetica", size: UIFont.preferredFont(forTextStyle: .title2).pointSize))
                 
                 UserStatsXPBarView(xpPercentage: Double(userInfo.level))
                     .padding(.top, -25)

@@ -20,24 +20,24 @@ struct PetStatsView: View {
                 
                 VStack{
                     Text("PET NAME")
-                        .font(.headline).bold()
+                        .font(Font.custom("Helvetica", size: UIFont.preferredFont(forTextStyle: .headline).pointSize).bold())
                         .foregroundColor(.white)
                         .padding(.top, 4)
                         .padding()
                     
                     Text("Rank 1 - Lvl 10")
-                        .font(.subheadline).bold()
+                        .font(Font.custom("Helvetica", size: UIFont.preferredFont(forTextStyle: .subheadline).pointSize).bold())
                         .foregroundColor(.white)
                         .padding(.horizontal, 16)
                         .padding(.vertical, 8)
                         .overlay(
                             RoundedRectangle(cornerRadius: 20)
-                                .fill(Color(hex: "704CFF").opacity(0.5))
+                                .fill(Color(hex: "FF4895").opacity(0.5))
                         )
                         .frame(width:140, height: 24)
                     
                     Text("Here it comes some descripton of the activities for the day.")
-                        .font(.subheadline).bold()
+                        .font(Font.custom("Helvetica", size: UIFont.preferredFont(forTextStyle: .subheadline).pointSize).bold())
                         .foregroundColor(.white)
                         .padding(.top, 4)
                         .padding()
@@ -47,7 +47,7 @@ struct PetStatsView: View {
                         
                         HStack{
                             Text("Stats1")
-                                .font(.subheadline).bold()
+                                .font(Font.custom("Helvetica", size: UIFont.preferredFont(forTextStyle: .subheadline).pointSize).bold())
                                 .foregroundColor(.white)
                                 .padding(1)
                                 .multilineTextAlignment(.center)
@@ -59,7 +59,7 @@ struct PetStatsView: View {
                         
                         HStack{
                             Text("Stats2")
-                                .font(.subheadline).bold()
+                                .font(Font.custom("Helvetica", size: UIFont.preferredFont(forTextStyle: .subheadline).pointSize).bold())
                                 .foregroundColor(.white)
                                 .padding(1)
                                 .multilineTextAlignment(.center)
@@ -69,7 +69,7 @@ struct PetStatsView: View {
                         
                         HStack{
                             Text("Stats3")
-                                .font(.subheadline).bold()
+                                .font(Font.custom("Helvetica", size: UIFont.preferredFont(forTextStyle: .subheadline).pointSize).bold())
                                 .foregroundColor(.white)
                                 .padding(1)
                                 .multilineTextAlignment(.center)
@@ -79,7 +79,7 @@ struct PetStatsView: View {
                         
                         HStack{
                             Text("Stats4")
-                                .font(.subheadline).bold()
+                                .font(Font.custom("Helvetica", size: UIFont.preferredFont(forTextStyle: .subheadline).pointSize).bold())
                                 .foregroundColor(.white)
                                 .padding(1)
                                 .multilineTextAlignment(.center)

@@ -25,7 +25,7 @@
 		233CC2742AFFAB0F007AF99D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233CC2732AFFAB0F007AF99D /* Extensions.swift */; };
 		233CC2762AFFC49B007AF99D /* GroupActivitiesSingleCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233CC2752AFFC49B007AF99D /* GroupActivitiesSingleCellView.swift */; };
 		233CC2782AFFF969007AF99D /* appMockData.json in Resources */ = {isa = PBXBuildFile; fileRef = 233CC2772AFFF969007AF99D /* appMockData.json */; };
-		233CC27A2B009B5D007AF99D /* static in Resources */ = {isa = PBXBuildFile; fileRef = 233CC2792B009B5D007AF99D /* static */; };
+		233CC27A2B009B5D007AF99D /* font in Resources */ = {isa = PBXBuildFile; fileRef = 233CC2792B009B5D007AF99D /* font */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,7 +49,8 @@
 		233CC2732AFFAB0F007AF99D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		233CC2752AFFC49B007AF99D /* GroupActivitiesSingleCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupActivitiesSingleCellView.swift; sourceTree = "<group>"; };
 		233CC2772AFFF969007AF99D /* appMockData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = appMockData.json; sourceTree = "<group>"; };
-		233CC2792B009B5D007AF99D /* static */ = {isa = PBXFileReference; lastKnownFileType = folder; path = static; sourceTree = "<group>"; };
+		233CC2792B009B5D007AF99D /* font */ = {isa = PBXFileReference; lastKnownFileType = folder; path = font; sourceTree = "<group>"; };
+		233CC27B2B00A919007AF99D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +83,8 @@
 		233CC2492AFF8A81007AF99D /* junction-repo */ = {
 			isa = PBXGroup;
 			children = (
+				233CC27B2B00A919007AF99D /* Info.plist */,
+				233CC2792B009B5D007AF99D /* font */,
 				233CC2772AFFF969007AF99D /* appMockData.json */,
 				233CC2702AFFAAEC007AF99D /* Utils */,
 				233CC25B2AFF9360007AF99D /* Data */,
@@ -139,7 +142,6 @@
 		233CC2702AFFAAEC007AF99D /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				233CC2792B009B5D007AF99D /* static */,
 				233CC2712AFFAAFB007AF99D /* CustomFont.swift */,
 				233CC2732AFFAB0F007AF99D /* Extensions.swift */,
 			);
@@ -206,7 +208,7 @@
 			files = (
 				233CC2532AFF8A82007AF99D /* Preview Assets.xcassets in Resources */,
 				233CC2782AFFF969007AF99D /* appMockData.json in Resources */,
-				233CC27A2B009B5D007AF99D /* static in Resources */,
+				233CC27A2B009B5D007AF99D /* font in Resources */,
 				233CC24F2AFF8A82007AF99D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,12 +368,18 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "junction-repo/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -404,12 +412,18 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "junction-repo/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
